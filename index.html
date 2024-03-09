@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="./favicon.ico.ico">
     
 </head>
-<body dir="rtl">
+<body>
             
   <!-- section sevtion ------start------>
   <nav class="grey darken-3 z-depth-5" >
     <div class="nav-wrapper">
       <a href="#!" class="white-text hide-on-med-and-up">HOME</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger grey-text right"><i class="material-icons">menu
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger grey-text "><i class="material-icons">menu
 </i></a>
       <ul class=" hide-on-med-and-down dis-flex">
         <li><a href="#">home</a></li>
@@ -40,8 +40,8 @@
       <a href="#email"><span class="white-text email">kpopafan@gmail.com</span></a>
     </div>
   </li>
-    <li><a href="#!"><i class="material-icons right sidenav-link-icon">cloud_queue</i>we can fly </a></li>
-    <li><a href="#!"><i class="material-icons right sidenav-link-icon">cloud_queue</i>your dream is powerfull</a></li>
+    <li><a href="#!"><i class="material-icons  sidenav-link-icon">cloud_queue</i>we can fly </a></li>
+    <li><a href="#!"><i class="material-icons  sidenav-link-icon">cloud_queue</i>your dream is powerfull</a></li>
     <li><a href="#!">Second Link</a></li>
     <li><div class="divider"></div></li>
     <li><a class="subheader">company</a></li>
@@ -151,7 +151,7 @@
                 </tr>
               </thead>
 
-              <tbody>
+              <tbody class="desktop_table_body">
                 <tr>
                  <td>1</td>
                  <td>mahdieh</td>
@@ -246,11 +246,20 @@
           </div>
          </div>
 
+         <section id="test_section" class="grey darken-1" x-data="{massage:'I love programming'}" >
+          we can fly togather 
+         <span x-text="massage" class="blue darken-1"></span>
+         <button class="btn" x-on:click="massage='I love javascript'">click</button>
+
+         </section>
+
 <!-- pepoele------end--- -->
 
 
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
    <script src="./main.js/main.js"></script>
    <script src="./main.js/user.js"></script>
+   
 </body>
 </html>
