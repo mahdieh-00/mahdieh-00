@@ -246,10 +246,10 @@
           </div>
          </div>
 
-         <section id="test_section" class="grey darken-1" x-data="{massage:'I love programming'}" >
+         <section id="test_section" class="grey darken-1" x-data="mainData()" >
           we can fly togather 
          <span x-text="massage" class="blue darken-1"></span>
-         <button class="btn" x-on:click="massage='I love javascript'">click</button>
+         <button class="btn" x-on:click="testFunc()">click</button>
 
          </section>
 
@@ -257,6 +257,7 @@
 
 
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script  src="./main.js/alpinejsContollers/maincontorollers.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
    <script src="./main.js/main.js"></script>
    <script src="./main.js/user.js"></script>
